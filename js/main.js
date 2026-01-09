@@ -36,8 +36,14 @@ let elHeaderBtnWrapper = document.createElement("div") // header__btn-content
 elContainer.classList.add("container")
 elHeader.classList.add("header")
 elHeaderLogoWrapper.classList.add("header__logo-wrapper")
+elHeaderLogoWrapper.setAttribute("data-aos","fade-left")
+elHeaderLogoWrapper.setAttribute("data-aos-duration", "1500")
+
+
 elHeaderLogoLink.classList.add("header__logo-link")
 elHeaderList.classList.add("header__list")
+elHeaderList.setAttribute("data-aos", "flip-up")
+elHeaderList.setAttribute("data-aos-duration", "800")
 elHeaderBtnWrapper.classList.add("header__btn-content")
 
 
@@ -98,6 +104,9 @@ let elHeroImg = document.createElement("img")
 elContainerHero.classList.add("container")
 elHero.classList.add("hero")
 elHeroContentWrapper.classList.add("hero__content-wrapper")
+elHeroContentWrapper.setAttribute("data-aos", "zoom-out-down")
+elHeroContentWrapper.setAttribute("data-aos-duration", "1000")
+
 
 elHeroTitle.classList.add("hero__title")
 elHeroTitle.textContent = "Dive Into The Depths Of Virtual Reality"
@@ -120,6 +129,8 @@ elHeroImg.src = "./images/hero-img.png"
 elHeroImg.alt = "hero-main-img"
 elHeroImg.width = "490"
 elHeroImg.height = "426"
+elHeroImg.setAttribute("data-aos", "zoom-out-up")
+elHeroImg.setAttribute("data-aos-duration", "1000")
 
 
 
@@ -134,6 +145,9 @@ elHeroLink.append(elHeroLinkBtn,elHeroLinkImg)
 
 // pay section start
 let elPaySection = document.querySelector(".pay-section")
+elPaySection.setAttribute("data-aos", "flip-down")
+elPaySection.setAttribute("data-aos-duration", "800")
+
 
 let payDataList = [
     {
@@ -169,7 +183,7 @@ elPayList.classList.add("pay__list")
 
 
 payDataList.forEach(item => {
-    elPayItem = document.createElement("li")
+    let elPayItem = document.createElement("li")
     elPayItem.classList.add("pay__item")
     
     let elPayImg = document.createElement("img")
