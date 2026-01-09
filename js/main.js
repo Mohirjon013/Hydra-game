@@ -43,9 +43,10 @@ elHeaderLogoWrapper.setAttribute("data-aos-duration", "1500")
 elHeaderLogoLink.classList.add("header__logo-link")
 elHeaderList.classList.add("header__list")
 elHeaderList.setAttribute("data-aos", "flip-up")
-elHeaderList.setAttribute("data-aos-duration", "800")
+elHeaderList.setAttribute("data-aos-duration", "1000")
 elHeaderBtnWrapper.classList.add("header__btn-content")
-
+elHeaderBtnWrapper.setAttribute("data-aos","fade-right")
+elHeaderBtnWrapper.setAttribute("data-aos-duration", "1000")
 
 logoImgList.forEach(item => {
     let elHeaderLogoImg = document.createElement("img") // header__logo-img
