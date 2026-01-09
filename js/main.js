@@ -63,7 +63,7 @@ navbarList.forEach(item => {
     let elHeaderItem = document.createElement("li") // header_item
     let elHeaderItemLink = document.createElement("a") // header__item-link
     
-    elHeaderItem.classList.add("header_item")
+    elHeaderItem.classList.add("header__item")
     elHeaderItemLink.classList.add("header__item-link")
     elHeaderItemLink.textContent = item
     elHeaderItemLink.href = "/"
@@ -191,17 +191,17 @@ payDataList.forEach(item => {
     elPayImg.classList.add("pay__img")
     elPayImg.src = item.imgSrc
     elPayImg.alt = "pay-icons"
-    elPayImg.width = "40"
-    elPayImg.height = "60"
+    elPayImg.width = item.imgWidth
+    elPayImg.height = item.imgHeight
     
     let elPayContentWrapper = document.createElement("div")
-    elPayContentWrapper.classList.add("pay__contanet-wrapper")
+    elPayContentWrapper.classList.add("pay__content-wrapper")
     
     let elPayTitle = document.createElement("h2")
     elPayTitle.classList.add("pay__title")
     elPayTitle.textContent = item.title
     
-    let elPayText = document.createElement("h2")
+    let elPayText = document.createElement("p")
     elPayText.classList.add("pay__text")
     elPayText.textContent = item.text
     
